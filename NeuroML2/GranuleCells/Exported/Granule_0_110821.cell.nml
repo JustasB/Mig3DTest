@@ -11,29 +11,34 @@
                 <distal x="4.340876e+00" y="-3.005222e+00" z="6.010444e+00" diameter="8.000000e+00"/>
             </segment>
             <segment id="1" name="Seg0_priden">
-                <parent segment="0"/>
+                <parent segment="0" fractionAlong="1"/>
                 <proximal x="4.340876e+00" y="-3.005222e+00" z="6.010444e+00" diameter="5.000000e-01"/>
                 <distal x="8.294199e+01" y="-5.742138e+01" z="1.148428e+02" diameter="5.000000e-01"/>
             </segment>
             <segment id="2" name="Seg0_priden2_0">
-                <parent segment="1"/>
+                <parent segment="1" fractionAlong="1"/>
                 <proximal x="8.294199e+01" y="-5.742138e+01" z="1.148428e+02" diameter="4.000000e-01"/>
-                <distal x="2.185944e+02" y="-1.513346e+02" z="3.026691e+02" diameter="4.000000e-01"/>
+                <distal x="1.531179e+02" y="-1.060047e+02" z="2.120094e+02" diameter="4.000000e-01"/>
             </segment>
             <segment id="3" name="Seg0_neck">
-                <parent segment="2"/>
+                <parent segment="2" fractionAlong="1"/>
                 <proximal x="2.185944e+02" y="-1.513346e+02" z="3.026691e+02" diameter="2.000000e-01"/>
                 <distal x="2.196796e+02" y="-1.520859e+02" z="3.041717e+02" diameter="2.000000e-01"/>
             </segment>
             <segment id="4" name="Seg0_head">
-                <parent segment="3"/>
+                <parent segment="3" fractionAlong="1"/>
                 <proximal x="2.196796e+02" y="-1.520859e+02" z="3.041717e+02" diameter="1.000000e+00"/>
                 <distal x="2.202222e+02" y="-1.524615e+02" z="3.049230e+02" diameter="1.000000e+00"/>
             </segment>
             <segment id="5" name="Seg0_priden_B">
-                <parent segment="1"/>
+                <parent segment="1" fractionAlong="1"/>
                 <proximal x="8.294199e+01" y="-5.742138e+01" z="1.148428e+02" diameter="5.000000e-01"/>
                 <distal x="1.025923e+02" y="-7.102542e+01" z="1.420508e+02" diameter="5.000000e-01"/>
+            </segment>
+            <segment id="6" name="Seg0_priden2_0_B">
+                <parent segment="2" fractionAlong="1"/>
+                <proximal x="1.531179e+02" y="-1.060047e+02" z="2.120094e+02" diameter="4.000000e-01"/>
+                <distal x="2.185944e+02" y="-1.513346e+02" z="3.026691e+02" diameter="4.000000e-01"/>
             </segment>
             <segmentGroup neuroLexId="sao864921383" id="neck_group">
                 <member segment="3"/>
@@ -67,6 +72,7 @@
                 <property tag="numberInternalDivisions" value="26"/>
                 <annotation/>
                 <member segment="2"/>
+                <member segment="6"/>
             </segmentGroup>
             <segmentGroup id="all">
                 <include segmentGroup="soma"/>

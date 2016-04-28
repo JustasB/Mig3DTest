@@ -8,7 +8,6 @@ from modeldata import getmodel
 
 nhost = int(pc.nhost())
 nmitral = params.Nmitral
-makeSynConns = True
 
 import granules
 
